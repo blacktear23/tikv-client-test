@@ -1,0 +1,11 @@
+[package]
+name = "tikvclienttest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# tikv-client = { git = "https://github.com/tikv/client-rust", branch = "master" }
+tikv-client = { git = "https://github.com/ekexium/client-rust", branch = "fix-pessimitic-lock-ttl" }
